@@ -2,144 +2,106 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      /* Common CSS styles */
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-      .content {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-      }
-      .container {
-        max-width: 100%;
-        display: flex;
-        padding-top: 10px;
-      }
-      #mainImage {
-        max-width: 40%;
-      }
-      p {
-        padding-left: 10px;
-      }
-      h1 {
-        padding-left: 10px;
-      }
-
-      h2 {
-        cursor: pointer;
-        color: #333;
-        padding-left: 10px;
-        padding-bottom: 5px;
-        margin: 0;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        width: 100%; /* Set the width to 100% */
-        border-bottom: 1.5px solid #000; /* Border color is set to black (#000) */
-      }
-
-      .h2-active {
-        background-color: black;
-        color: #fff;
-      }
-      :root {
-        --border-color-1: red;
-        --border-color-2: blue;
-        /* Define more border colors using --border-color-N pattern */
-      }
-
-      [class^="h2-color-"] {
-        padding-left: 10px;
-        padding-bottom: 5px;
-        margin: 0;
-        margin-top: 15px;
-        margin-bottom: 0px;
-      }
-
-      .h2-color-1 {
-        border-bottom: 1.5px solid var(--border-color-1);
-      }
-
-      .h2-color-2 {
-        border-bottom: 1.5px solid var(--border-color-2);
-      }
-    </style>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="container">
-      <img id="mainImage" src="27.png" alt="이미지 27" />
+      <img id="mainImage" src="1.png" alt="표지이미지" />
       <div class="content">
         <!-- Book sections -->
+        <h2
+          class="h2-color-2"
+          onclick="changeImage('2.png', this)"
+          data-image="2.png"
+        >
+          가슴이 내려앉다
+        </h2>
+        <div class="content">
+          <div>
+            <p>몹시 놀라서 맥이 풀리다.</p>
+            <p>
+              월요일 아침, 출근 준비를 마친 강한결 씨. 여느 때처럼 현관문을
+              나서다 알 수 없는 위화감에 발길을 멈춘다. 홀린 듯 주머니에 손을
+              넣는다. 당연히 있어야 할 지갑이 없다. 급한 마음에 집안 이곳저곳
+              찾아본다. 지갑은 보이지 않는다. 시간을 지체할 수 없어 찝찝한
+              마음으로 집을 나선다. 사무실에서도 머릿속엔 온통 지갑 걱정뿐. 집에
+              두고 온 정신을 찾으러 퇴근해 집안 곳곳을 신중하게 뒤진다. 지갑은
+              보이지 않는다. 이제야 지갑을 잃어버렸다는 실감이 든다. 이제 뭘
+              해야 하나. 신분증 재발급이 먼저인가 카드 정지부터 해야 할까.
+              지갑을 찾을 순 있는 걸까.
+            </p>
+            <p>
+              강한결, [이생안망] 내 지갑이 사라졌다...'멘붕' 당신이 먼저 할
+              일은?, 쿠키뉴스, 2021,
+              https://www.kukinews.com/newsView/kuk202104090082
+            </p>
+          </div>
+        </div>
 
         <h2
-          class="h2-color-1"
-          onclick="changeImage('27.png', this)"
-          data-image="27.png"
+          class="h2-color-3"
+          onclick="changeImage('3.png', this)"
+          data-image="3.png"
+        >
+          가슴이 천근만근 무겁다
+        </h2>
+        <div class="content">
+          <div>
+            <p>
+              무게가 천 근이나 만 근이 된다는 뜻으로, 무거운 마음을 비유적으로
+              이르는 말.
+            </p>
+            <p>
+              하품이 나올 만큼 별 볼 일 없는 평범한 날들은 이렇게 멋이 없는데,
+              우리는 항상 왜 이토록 애달아하는 걸까. 그 지루한 평범함을 지키기
+              위해 아무도 모를 야근과 싸워가며 눈치 봐가며 겨우 볼 만한 작업
+              하나 건지려고 깨어 있는 시간을 다해 애쓰는 걸까. 이번 일이
+              잘된다고 대단한 위인이 되는 것도 아닌데, 도대체 무엇이 우리를
+              이토록 추동하는 걸까. 나는 궁금하지 않을 수 없다. 그것은, 아마도
+              우리가 갖는 평범한 날들을 지키고 싶기 때문일 것이다 - 가족의
+              생일을 챙기고 친구와 주말 여행을 계획하고 맛있는 식당을 예약하는
+              평범한 날들. 본문의 행간을 0.5포인트 조정했을 때 눈이 맑아지는
+              경험과 수백 번 클릭으로 윤곽이 드러나는 벡터 이미지에 대한 신뢰로
+              이루어진 평범한 날들 말이다. 우리는 오늘이 무사하기 바라며 보이지
+              않는 무수한 것들과 싸우고 있음을 알아야 한다. 그러므로 평범한
+              날들을 지키기 위한 우리의 노력은 결코 가벼울 수 없는 것이다.
+            </p>
+            <p>김어진, 일상의 실천, 2023</p>
+          </div>
+        </div>
+
+        <h2
+          class="h2-color-26"
+          onclick="changeImage('26.png', this)"
+          data-image="26.png"
         >
           하늘을 날 것 같다
         </h2>
         <div class="content">
           <div>
+            <p>매우 기쁘다</p>
             <p>
-              퇴사 인사 구성 퇴사 인사말 구성 예시 1. 퇴직 보고 담당 직무를
-              언급하고 퇴사 사실을 발표한다. "오늘을 마
+              퇴사 인사 구성 퇴사 인사말 구성 예시 1.　퇴직 보고 담당 직무를
+              언급하고 퇴사 사실을 발표한다. “오늘을 마지막으로 (직무) 자리에서
+              (업무)를 마무리하게 되었습니다." 2.　퇴사사유 및 추억 언급 그
+              자리에 있는 상사나 동료와의 에피소드와 인상 깊은 추억을 공유한다.
+              "XX님과 ●● 프로젝트를 완수하여 사내 표창을 받았던 추억은 잊지 못할
+              것 같습니다.  3.　감사 인사  감사 인사를 포함한다. "오랜 시간 많은
+              도움과 격려를 주셔서 감사했습니다." 4.　미래 관계 형성 긍정적인
+              미래 관계에 대한 기원을 언급한다. "향후에도 좋은 인연으로 다시
+              만나 뵙기를 기원합니다." 5.　맺음말 기업과 동료들에 대한 건강 또는
+              성공 기원 등으로 마무리한다. "앞으로 좋은 일들이 가득하시길
+              바랍니다."
             </p>
-            <p>커리어조언, 퇴사가이드- 마음을 전하는 퇴사 인사말 남기기,</p>
-          </div>
-        </div>
-
-        <h2
-          class="h2-color-2"
-          onclick="changeImage('28.png', this)"
-          data-image="28.png"
-        >
-          다가오는 스프린트
-        </h2>
-        <div class="content">
-          <div>
             <p>
-              다가오는 스프린트 스프린트 3-4주 계획 세우기, 스프린트 회고하는
-              방법,
+              커리어조언, 퇴사가이드- 마음을 전하는 퇴사 인사말 남기기,
+              https://www.robertwalters.co.kr/career-advice/resign-speech.html
             </p>
           </div>
         </div>
       </div>
     </div>
 
-    <script>
-      // JavaScript 코드
-      var headings = document.querySelectorAll("h2");
-
-      headings.forEach(function (heading) {
-        var content = heading.nextElementSibling;
-        var textContainer = content.querySelector("div");
-
-        content.style.display = "none";
-
-        heading.addEventListener("click", function () {
-          if (content.style.display === "none") {
-            content.style.display = "flex";
-            textContainer.style.flexDirection = "column";
-            // heading.classList.toggle("h2-active");
-            changeImage(heading.getAttribute("data-image"), this);
-
-            // Set background color of div
-            var borderColor = getComputedStyle(heading).borderBottomColor;
-            textContainer.style.backgroundColor = borderColor;
-          } else {
-            content.style.display = "none";
-            // heading.classList.toggle("h2-active");
-          }
-        });
-      });
-
-      function changeImage(imageName, element) {
-        var mainImage = document.getElementById("mainImage");
-        mainImage.src = imageName;
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
