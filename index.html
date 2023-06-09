@@ -2,13 +2,44 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "cxl4kmt",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
     <style>
       /* Common CSS styles */
       body {
-        font-family: "MingLiU", sans-serif;
-        margin: 0;
-        padding: 0;
+        font-family: "adobe-myungjo-std", sans-serif;
+        font-weight: 300;
+        font-style: normal;
       }
       .content {
         display: flex;
@@ -25,16 +56,16 @@
         max-height: 100vh;
         object-fit: contain;
       }
-
+      h2 {
+        margin: 0%;
+      }
       #bottomBorder {
         border-bottom: 1.5px solid #000;
       }
       p {
+        margin: 1;
         padding-left: 10px;
         padding-right: 50px;
-      }
-      h1 {
-        padding-left: 1 0px;
       }
       :root {
         --color-2: #f5f53d;
@@ -166,9 +197,6 @@
 
       .text-container26 {
         background-color: var(-color-26);
-      }
-      h2 {
-        margin: 1%;
       }
     </style>
   </head>
