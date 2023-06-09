@@ -3,21 +3,185 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* Common CSS styles */
+      body {
+        font-family: "MingLiU", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+      .container {
+        max-width: 100%;
+        display: flex;
+        padding-top: 10px;
+      }
+      #mainImage {
+        max-width: 40%;
+        max-height: 100vh;
+        object-fit: contain;
+      }
+
+      #bottomBorder {
+        border-bottom: 1.5px solid #000;
+      }
+      p {
+        padding-left: 10px;
+        padding-right: 50px;
+      }
+      h1 {
+        padding-left: 1 0px;
+      }
+      :root {
+        --color-2: #f5f53d;
+        --color-3: #f53dab;
+        --color-4: #4f7cbe;
+        --color-5: #73bf96;
+        --color-6: #3df5f5;
+        --color-7: #f53d62;
+        --color-8: #f53d3d;
+        --color-9: #3df562;
+        --color-10: #873df5;
+        --color-11: #3dd0f5;
+        --color-12: #3dabf5;
+        --color-13: #f53d87;
+        --color-14: #f5623d;
+        --color-15: #ec623f;
+        --color-16: #425ea8;
+        --color-17: #f5873d;
+        --color-18: #3df5d0;
+        --color-19: #f5d03d;
+        --color-20: #62f53d;
+        --color-21: #f53df5;
+        --color-22: #f53dd0;
+        --color-23: #3d62f5;
+        --color-24: #3df587;
+        --color-25: #3d3df5;
+        --color-26: #f5ab3d;
+        /* Define more border colors using --color-N pattern */
+      }
+      .text-container1 {
+        background-color: var(-color-1);
+      }
+
+      .text-container2 {
+        background-color: var(-color-2);
+      }
+
+      .text-container3 {
+        background-color: var(-color-3);
+      }
+
+      .text-container4 {
+        background-color: var(-color-4);
+      }
+
+      .text-container5 {
+        background-color: var(-color-5);
+      }
+
+      .text-container6 {
+        background-color: var(-color-6);
+      }
+
+      .text-container7 {
+        background-color: var(-color-7);
+      }
+
+      .text-container8 {
+        background-color: var(-color-8);
+      }
+
+      .text-container9 {
+        background-color: var(-color-9);
+      }
+
+      .text-container10 {
+        background-color: var(-color-10);
+      }
+
+      .text-container11 {
+        background-color: var(-color-11);
+      }
+
+      .text-container12 {
+        background-color: var(-color-12);
+      }
+
+      .text-container13 {
+        background-color: var(-color-13);
+      }
+
+      .text-container14 {
+        background-color: var(-color-14);
+      }
+
+      .text-container15 {
+        background-color: var(-color-15);
+      }
+
+      .text-container16 {
+        background-color: var(-color-16);
+      }
+
+      .text-container17 {
+        background-color: var(-color-17);
+      }
+
+      .text-container18 {
+        background-color: var(-color-18);
+      }
+
+      .text-container19 {
+        background-color: var(-color-19);
+      }
+
+      .text-container20 {
+        background-color: var(-color-20);
+      }
+
+      .text-container21 {
+        background-color: var(-color-21);
+      }
+
+      .text-container22 {
+        background-color: var(-color-22);
+      }
+
+      .text-container23 {
+        background-color: var(-color-23);
+      }
+
+      .text-container24 {
+        background-color: var(-color-24);
+      }
+
+      .text-container25 {
+        background-color: var(-color-25);
+      }
+
+      .text-container26 {
+        background-color: var(-color-26);
+      }
+      h2 {
+        margin: 1%;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
       <img id="mainImage" src="1.png" alt="표지이미지" />
       <div class="content">
         <!-- Book sections -->
-        <h2
-          class="h2-color-2"
-          onclick="changeImage('2.png', this)"
-          data-image="2.png"
-        >
+        <h2 class="h2" onclick="changeImage('2.png', this)" data-image="2.png">
           가슴이 내려앉다
         </h2>
-        <div class="content">
-          <div>
+        <div>
+          <div class="text-container2">
             <p>몹시 놀라서 맥이 풀리다.</p>
             <p>
               월요일 아침, 출근 준비를 마친 강한결 씨. 여느 때처럼 현관문을
@@ -38,14 +202,10 @@
           </div>
         </div>
 
-        <h2
-          class="h2-color-3"
-          onclick="changeImage('3.png', this)"
-          data-image="3.png"
-        >
+        <h2 class="h2" onclick="changeImage('3.png', this)" data-image="3.png">
           가슴이 천근만근 무겁다
         </h2>
-        <div class="content">
+        <div>
           <div>
             <p>
               무게가 천 근이나 만 근이 된다는 뜻으로, 무거운 마음을 비유적으로
@@ -71,13 +231,13 @@
         </div>
 
         <h2
-          class="h2-color-26"
+          class="h2"
           onclick="changeImage('26.png', this)"
           data-image="26.png"
         >
           하늘을 날 것 같다
         </h2>
-        <div class="content">
+        <div>
           <div>
             <p>매우 기쁘다</p>
             <p>
@@ -102,6 +262,50 @@
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+      var headings = document.querySelectorAll("h2");
+      var mainImage = document.getElementById("mainImage");
+      var lastClickTime = Date.now();
+
+      // 클릭 이벤트 처리
+      headings.forEach(function (heading) {
+        var content = heading.nextElementSibling;
+        var textContainer = content.querySelector("div");
+
+        content.style.display = "none";
+
+        heading.addEventListener("click", function () {
+          if (content.style.display === "none") {
+            // 모든 본문을 닫음
+            headings.forEach(function (h) {
+              h.nextElementSibling.style.display = "none";
+            });
+            // 클릭한 본문을 열고 이미지 변경
+            content.style.display = "flex";
+            textContainer.style.flexDirection = "column";
+            changeImage(heading.getAttribute("data-image"));
+            // 마지막 클릭 시간 갱신
+            lastClickTime = Date.now();
+          } else {
+            // 클릭한 본문을 닫음
+            content.style.display = "none";
+          }
+        });
+      });
+
+      // 2분간 클릭이 없으면 화면 새로고침
+      setInterval(function () {
+        var currentTime = Date.now();
+        var elapsedTime = (currentTime - lastClickTime) / 1000; // 초 단위로 경과 시간 계산
+
+        if (elapsedTime >= 100) {
+          location.reload(); // 화면 새로고침
+        }
+      }, 1000); // 1초마다 경과 시간 체크
+
+      function changeImage(imageName) {
+        mainImage.src = imageName;
+      }
+    </script>
   </body>
 </html>
