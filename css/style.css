@@ -1,8 +1,7 @@
-/* Common CSS styles */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  font-family: "adobe-myungjo-std", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 .content {
   display: flex;
@@ -19,14 +18,161 @@ body {
   max-height: 100vh;
   object-fit: contain;
 }
-
+h2 {
+  margin: 0%;
+}
 #bottomBorder {
   border-bottom: 1.5px solid #000;
 }
 p {
+  margin: 1;
   padding-left: 10px;
   padding-right: 50px;
 }
-h1 {
-  padding-left: 10px;
+:root {
+  --color-2: #f5f53d;
+  --color-3: #f53dab;
+  --color-4: #4f7cbe;
+  --color-5: #73bf96;
+  --color-6: #3df5f5;
+  --color-7: #f53d62;
+  --color-8: #f53d3d;
+  --color-9: #3df562;
+  --color-10: #873df5;
+  --color-11: #3dd0f5;
+  --color-12: #3dabf5;
+  --color-13: #f53d87;
+  --color-14: #f5623d;
+  --color-15: #ec623f;
+  --color-16: #425ea8;
+  --color-17: #f5873d;
+  --color-18: #3df5d0;
+  --color-19: #f5d03d;
+  --color-20: #62f53d;
+  --color-21: #f53df5;
+  --color-22: #f53dd0;
+  --color-23: #3d62f5;
+  --color-24: #3df587;
+  --color-25: #3d3df5;
+  --color-26: #f5ab3d;
+  /* Define more border colors using --color-N pattern */
+}
+
+.text-container2 {
+  background-color: var(--color-2);
+}
+
+.text-container3 {
+  background-color: var(--color-3);
+}
+
+.text-container4 {
+  background-color: var(--color-4);
+}
+
+.text-container5 {
+  background-color: var(--color-5);
+}
+
+.text-container6 {
+  background-color: var(--color-6);
+}
+
+.text-container7 {
+  background-color: var(--color-7);
+}
+
+.text-container8 {
+  background-color: var(--color-8);
+}
+
+.text-container9 {
+  background-color: var(--color-9);
+}
+
+.text-container10 {
+  background-color: var(--color-10);
+}
+
+.text-container11 {
+  background-color: var(--color-11);
+}
+
+.text-container12 {
+  background-color: var(--color-12);
+}
+
+.text-container13 {
+  background-color: var(--color-13);
+}
+
+.text-container14 {
+  background-color: var(--color-14);
+}
+
+.text-container15 {
+  background-color: var(--color-15);
+}
+
+.text-container16 {
+  background-color: var(--color-16);
+}
+
+.text-container17 {
+  background-color: var(--color-17);
+}
+
+.text-container18 {
+  background-color: var(--color-18);
+}
+
+.text-container19 {
+  background-color: var(--color-19);
+}
+
+.text-container20 {
+  background-color: var(--color-20);
+}
+
+.text-container21 {
+  background-color: var(--color-21);
+}
+
+.text-container22 {
+  background-color: var(--color-22);
+}
+
+.text-container23 {
+  background-color: var(--color-23);
+}
+
+.text-container24 {
+  background-color: var(--color-24);
+}
+
+.text-container25 {
+  background-color: var(--color-25);
+}
+
+.text-container26 {
+  background-color: var(--color-26);
+}
+/* 모바일 화면에서 이미지와 본문을 일렬로 표시 */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  #mainImage {
+    max-width: 100%;
+    max-height: auto;
+  }
+  p {
+    font-size: 16px; /* 원하는 글자 크기로 변경하세요 */
+    padding-left: 2px;
+    padding-right: 10px;
+  }
+  h2 {
+    font-weight: bold;
+    font-size: 30px; /* 원하는 글자 크기로 변경하세요 */
+  }
 }
