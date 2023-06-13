@@ -57,106 +57,106 @@ p {
   --color-26: #f5ab3d;
   /* Define more border colors using --color-N pattern */
 }
-
 .text-container2 {
-  background-color: var(--color-2);
+  background: linear-gradient(to top, white 50%, var(--color-2));
 }
 
 .text-container3 {
-  background-color: var(--color-3);
+  background: linear-gradient(to top, white 50%, var(--color-3));
 }
 
 .text-container4 {
-  background-color: var(--color-4);
+  background: linear-gradient(to top, white 50%, var(--color-4));
 }
 
 .text-container5 {
-  background-color: var(--color-5);
+  background: linear-gradient(to top, white 50%, var(--color-5));
 }
 
 .text-container6 {
-  background-color: var(--color-6);
+  background: linear-gradient(to top, white 50%, var(--color-6));
 }
 
 .text-container7 {
-  background-color: var(--color-7);
+  background: linear-gradient(to top, white 50%, var(--color-7));
 }
 
 .text-container8 {
-  background-color: var(--color-8);
+  background: linear-gradient(to top, white 50%, var(--color-8));
 }
 
 .text-container9 {
-  background-color: var(--color-9);
+  background: linear-gradient(to top, white 50%, var(--color-9));
 }
 
 .text-container10 {
-  background-color: var(--color-10);
+  background: linear-gradient(to top, white 50%, var(--color-10));
 }
 
 .text-container11 {
-  background-color: var(--color-11);
+  background: linear-gradient(to top, white 50%, var(--color-11));
 }
 
 .text-container12 {
-  background-color: var(--color-12);
+  background: linear-gradient(to top, white 50%, var(--color-12));
 }
 
 .text-container13 {
-  background-color: var(--color-13);
+  background: linear-gradient(to top, white 50%, var(--color-13));
 }
 
 .text-container14 {
-  background-color: var(--color-14);
+  background: linear-gradient(to top, white 50%, var(--color-14));
 }
 
 .text-container15 {
-  background-color: var(--color-15);
+  background: linear-gradient(to top, white 50%, var(--color-15));
 }
 
 .text-container16 {
-  background-color: var(--color-16);
+  background: linear-gradient(to top, white 50%, var(--color-16));
 }
 
 .text-container17 {
-  background-color: var(--color-17);
+  background: linear-gradient(to top, white 50%, var(--color-17));
 }
 
 .text-container18 {
-  background-color: var(--color-18);
+  background: linear-gradient(to top, white 50%, var(--color-18));
 }
 
 .text-container19 {
-  background-color: var(--color-19);
+  background: linear-gradient(to top, white 50%, var(--color-19));
 }
 
 .text-container20 {
-  background-color: var(--color-20);
+  background: linear-gradient(to top, white 50%, var(--color-20));
 }
 
 .text-container21 {
-  background-color: var(--color-21);
+  background: linear-gradient(to top, white 50%, var(--color-21));
 }
 
 .text-container22 {
-  background-color: var(--color-22);
+  background: linear-gradient(to top, white 50%, var(--color-22));
 }
 
 .text-container23 {
-  background-color: var(--color-23);
+  background: linear-gradient(to top, white 50%, var(--color-23));
 }
 
 .text-container24 {
-  background-color: var(--color-24);
+  background: linear-gradient(to top, white 50%, var(--color-24));
 }
 
 .text-container25 {
-  background-color: var(--color-25);
+  background: linear-gradient(to top, white 50%, var(--color-25));
 }
 
 .text-container26 {
-  background-color: var(--color-26);
+  background: linear-gradient(to top, white 50%, var(--color-26));
 }
+
 /* 모바일 화면에서 이미지와 본문을 일렬로 표시 */
 @media screen and (max-width: 768px) {
   .container {
