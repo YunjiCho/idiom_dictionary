@@ -32,9 +32,11 @@ h2 {
 
 .mean {
   margin: 0%;
+  padding-top: 5px;
   padding-left: 10px;
 }
 .text {
+  padding-top: 5px;
   padding-left: 10px;
 }
 .ref {
