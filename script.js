@@ -1,7 +1,6 @@
 var headings = document.querySelectorAll("h2");
 var mainImage = document.getElementById("mainImage");
 var isScrolling = false;
-var lastClickTime = 0;
 
 headings.forEach(function (heading) {
   var content = heading.nextElementSibling;
@@ -24,6 +23,10 @@ headings.forEach(function (heading) {
         content.style.display = "none";
       }
     }
+    // Remove highlight class from all h2 elements
+    headings.forEach((h) => h.classList.remove("highlight"));
+    // Add highlight class to the clicked h2 element
+    heading.classList.add("highlight");
 
     lastClickTime = currentTime;
   });

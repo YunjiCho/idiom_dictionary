@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "cxl4kmt",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+    <style>
+      body {
+        font-family: "adobe-myungjo-std", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+      .container {
+        max-width: 100%;
+        display: flex;
+        padding-top: 10px;
+      }
+      .text-contains {
+        width: 90%;
+        margin-left: 50px;
+      }
+      #mainImage {
+        max-width: 40%;
+        max-height: 100vh;
+        object-fit: contain;
+      }
+      h2 {
+        margin: 0%;
+        font-size: large;
+      }
+      #bottomBorder {
+        border-bottom: 1.5px solid #000;
+      }
+
+      .mean {
+        margin: 0%;
+        padding-top: 5px;
+        padding-left: 10px;
+      }
+      .text {
+        padding-top: 5px;
+        padding-left: 10px;
+      }
+      .ref {
+        padding-right: 10px;
+        text-align: right;
+        font-size: smaller;
+      }
+
+      :root {
+        --color-2: #f5f53d;
+        --color-3: #f53dab;
+        --color-4: #4f7cbe;
+        --color-5: #73bf96;
+        --color-6: #71c7d7;
+
+        /* Define more border colors using --color-N pattern */
+      }
+      :root {
+        --gradient-stop: 70%;
+      }
+
+      .text-container2 {
+        background: linear-gradient(
+          to top,
+          white var(--gradient-stop),
+          var(--color-2)
+        );
+      }
+
+      .text-container3 {
+        background: linear-gradient(
+          to top,
+          white var(--gradient-stop),
+          var(--color-3)
+        );
+      }
+
+      .text-container4 {
+        background: linear-gradient(
+          to top,
+          white var(--gradient-stop),
+          var(--color-4)
+        );
+      }
+
+      /* Add a class to highlight the clicked h2 */
+      .highlight {
+        position: relative;
+      }
+      .highlight #mainImage {
+        position: absolute;
+        top: -50px; /* Adjust the value to position the image correctly */
+      }
+      /* 모바일 화면에서 이미지와 본문을 일렬로 표시 */
+      @media screen and (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+        #mainImage {
+          max-width: 100%;
+          max-height: auto;
+        }
+        p {
+          font-size: 12px; /* 원하는 글자 크기로 변경하세요 */
+          padding-left: 2px;
+          padding-right: 10px;
+        }
+        h2 {
+          font-weight: bold;
+          font-size: 20px; /* 원하는 글자 크기로 변경하세요 */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img id="mainImage" src="1.png" alt="표지이미지" />
+      <div class="content">
+        <!-- Book sections -->
+        <h2
+          class="h2 highlight"
+          onclick="changeImage('2.png', this)"
+          data-image="2.png"
+        >
+          가슴이 내려앉다
+        </h2>
+        <div>
+          <div class="text-container2 text-contains">
+            <p class="mean">몹시 놀라서 맥이 풀리다.</p>
+            <p class="text">
+              월요일 아침, 출근 준비를 마친 강한결 씨. 여느 때처럼 현관문을
+              나서다 알 수 없는 위화감에 발길을 멈춘다. 홀린 듯 주머니에 손을
+              넣는다. 당연히 있어야 할 지갑이 없다. 급한 마음에 집안 이곳저곳
+              찾아본다. 지갑은 보이지 않는다. 시간을 지체할 수 없어 찝찝한
+              마음으로 집을 나선다. 사무실에서도 머릿속엔 온통 지갑 걱정뿐. 집에
+              두고 온 정신을 찾으러 퇴근해 집안 곳곳을 신중하게 뒤진다. 지갑은
+              보이지 않는다. 이제야 지갑을 잃어버렸다는 실감이 든다. 이제 뭘
+              해야 하나. 신분증 재발급이 먼저인가 카드 정지부터 해야 할까.
+              지갑을 찾을 순 있는 걸까.
+            </p>
+            <p class="ref">
+              강한결, [이생안망] 내 지갑이 사라졌다...'멘붕' 당신이 먼저 할
+              일은?, 쿠키뉴스, 2021,
+              https://www.kukinews.com/newsView/kuk202104090082
+            </p>
+          </div>
+        </div>
+        <h2
+          class="h2"
+          onclick="changeImage('26.png', this)"
+          data-image="26.png"
+        >
+          하늘을 날 것 같다
+        </h2>
+        <div>
+          <div class="text-container26 text-contains">
+            <p class="mean">매우 기쁘다</p>
+            <p class="text">
+              퇴사 인사 구성 퇴사 인사말 구성 예시<br />
+              1.퇴직 보고 <br />담당 직무를 언급하고 퇴사 사실을 발표한다.
+              “오늘을 마지막으로 (직무) 자리에서 (업무)를 마무리하게
+              되었습니다." <br />2.퇴사사유 및 추억 언급<br />
+              그 자리에 있는 상사나 동료와의 에피소드와 인상 깊은 추억을
+              공유한다. "XX님과 ●● 프로젝트를 완수하여 사내 표창을 받았던 추억은
+              잊지 못할 것 같습니다.<br />3. 감사 인사<br />
+              감사 인사를 포함한다. "오랜 시간 많은 도움과 격려를 주셔서
+              감사했습니다." <br />4. 미래 관계 형성<br />
+              긍정적인 미래 관계에 대한 기원을 언급한다. "향후에도 좋은 인연으로
+              다시 만나 뵙기를 기원합니다." <br />5. 맺음말<br />
+              기업과 동료들에 대한 건강 또는 성공 기원 등으로 마무리한다.
+              "앞으로 좋은 일들이 가득하시길 바랍니다."
+            </p>
+            <p class="ref">
+              커리어조언, 퇴사가이드- 마음을 전하는 퇴사 인사말 남기기,
+              https://www.robertwalters.co.kr/career-advice/resign-speech.html
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var headings = document.querySelectorAll("h2");
+      var mainImage = document.getElementById("mainImage");
+      var lastClickTime = Date.now();
+      var isScrolling = false;
+
+      // 클릭 이벤트 처리
+      headings.forEach(function (heading) {
+        var content = heading.nextElementSibling;
+        var textContainer = content.querySelector("div");
+
+        content.style.display = "none";
+
+        heading.addEventListener("click", function () {
+          if (content.style.display === "none") {
+            // 모든 본문을 닫음
+            headings.forEach(function (h) {
+              h.nextElementSibling.style.display = "none";
+            });
+            // 클릭한 본문을 열고 이미지 변경
+            content.style.display = "flex";
+            textContainer.style.flexDirection = "column";
+            changeImage(heading.getAttribute("data-image"));
+            // 마지막 클릭 시간 갱신
+            lastClickTime = Date.now();
+          } else {
+            // 클릭한 본문을 닫음
+            content.style.display = "none";
+          }
+          // Remove highlight class from all h2 elements
+          headings.forEach((h) => h.classList.remove("highlight"));
+          // Add highlight class to the clicked h2 element
+          heading.classList.add("highlight");
+        });
+      });
+
+      // 2분간 클릭이 없으면 화면 새로고침
+      setInterval(function () {
+        var currentTime = Date.now();
+        var elapsedTime = (currentTime - lastClickTime) / 1000; // 초 단위로 경과 시간 계산
+
+        if (elapsedTime >= 40) {
+          location.reload(); // 화면 새로고침
+        }
+      }, 1000); // 1초마다 경과 시간 체크
+
+      function changeImage(imageName) {
+        mainImage.src = imageName;
+      }
+      window.addEventListener("scroll", function () {
+        if (!isScrolling) {
+          window.requestAnimationFrame(function () {
+            if (window.innerWidth > 768) {
+              mainImage.style.top = window.pageYOffset + "px";
+            }
+            isScrolling = false;
+          });
+        }
+        isScrolling = true;
+      });
+      // 모바일 화면에서 이미지와 본문을 일렬로 표시
+      if (window.innerWidth <= 768) {
+        headings.forEach(function (heading) {
+          var content = heading.nextElementSibling;
+          var textContainer = content.querySelector("div");
+
+          heading.addEventListener("click", function () {
+            if (content.style.display === "none") {
+              headings.forEach(function (h) {
+                h.nextElementSibling.style.display = "none";
+              });
+              content.style.display = "flex";
+              textContainer.style.flexDirection = "column";
+              changeImage(heading.getAttribute("data-image"));
+
+              // 이미지 위치를 클릭한 h2 바로 위로 조정
+              mainImage.style.top =
+                heading.offsetTop - mainImage.offsetHeight + "px";
+            } else {
+              content.style.display = "none";
+            }
+
+            headings.forEach((h) => h.classList.remove("highlight"));
+            heading.classList.add("highlight");
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

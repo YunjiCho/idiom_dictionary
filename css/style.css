@@ -276,7 +276,14 @@ h2 {
     var(--color-26)
   );
 }
-
+/* Add a class to highlight the clicked h2 */
+.highlight {
+  position: relative;
+}
+.highlight #mainImage {
+  position: absolute;
+  top: -50px; /* Adjust the value to position the image correctly */
+}
 /* 모바일 화면에서 이미지와 본문을 일렬로 표시 */
 @media screen and (max-width: 768px) {
   .container {
