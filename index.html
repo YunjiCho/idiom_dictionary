@@ -756,16 +756,6 @@
         });
       });
 
-      // 2분간 클릭이 없으면 화면 새로고침
-      setInterval(function () {
-        var currentTime = Date.now();
-        var elapsedTime = (currentTime - lastClickTime) / 1000; // 초 단위로 경과 시간 계산
-
-        if (elapsedTime >= 40) {
-          location.reload(); // 화면 새로고침
-        }
-      }, 1000); // 1초마다 경과 시간 체크
-
       function changeImage(imageName) {
         mainImage.src = imageName;
       }

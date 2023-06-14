@@ -9,26 +9,23 @@ headings.forEach(function (heading) {
   content.style.display = "none";
 
   heading.addEventListener("click", function () {
-    var currentTime = new Date().getTime();
-    var elapsedTime = currentTime - lastClickTime;
+    // var currentTime = new Date().getTime();
+    // var elapsedTime = currentTime - lastClickTime;
 
-    if (elapsedTime > 20000) {
-      location.reload();
+    if (content.style.display === "none") {
+      content.style.display = "flex";
+      textContainer.style.flexDirection = "column";
+      changeImage(heading.getAttribute("data-image"), this);
     } else {
-      if (content.style.display === "none") {
-        content.style.display = "flex";
-        textContainer.style.flexDirection = "column";
-        changeImage(heading.getAttribute("data-image"), this);
-      } else {
-        content.style.display = "none";
-      }
+      content.style.display = "none";
     }
+
     // Remove highlight class from all h2 elements
     headings.forEach((h) => h.classList.remove("highlight"));
     // Add highlight class to the clicked h2 element
     heading.classList.add("highlight");
 
-    lastClickTime = currentTime;
+    // lastClickTime = currentTime;
   });
 });
 
